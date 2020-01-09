@@ -92,8 +92,6 @@ You may want to preview the site before publishing, so just run the script tool:
 $ bash tools/run.sh
 ```
 
->**Note**: The *Recent Update* list requires the latest git-log date of posts, thus make sure the changes in `_posts` have been committed before running this command.
-
 Open a brower and visit <http://localhost:4000>.
 
 Few days later, you may find that the file changes does not refresh in real time by using `run.sh`. Don't worry, the advanced option `-r` (or `--realtime`) will solve this problem, but it requires [**fswatch**](http://emcrisostomo.github.io/fswatch/) to be installed on your machine.
@@ -121,6 +119,8 @@ By deploying the site in this way, you're allowed to push the source code direct
 ```console
 $ bash tools/init.sh
 ```
+
+> Please note that the *Recent Update* list requires the latest git-log date of posts, thus make sure the changes in `_posts` have been committed before running this command.
 
 it will automatically generates the *Latest Modified Date* and *Categories / Tags* page for the posts.
 
